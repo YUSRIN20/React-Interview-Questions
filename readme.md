@@ -22,7 +22,7 @@
 ## 6. What is the difference between **React** and **Angular**?
 
 ## 7. What is DOM?
- -  The DOM (Document Object Model) represents the web page as a **Tree-like structure** which alloes javascript to dynamically acess and manipulate the content and structre of a web page.
+ -  The DOM (Document Object Model) represents the web page as a **Tree-like structure** which allows javascript to dynamically access and manipulate the content and structure of a web page.
 
 ## 8. What is the difference between **DOM** & **Virtual DOM**?**V.IMP**
   - React uses a Virtual DOM to effectively update the UI without re-render the entire page, which helps improve performance and make the apllication more responsive.
@@ -76,7 +76,7 @@ export default App
 ## Chapter-3-JSX
 
 ## 20. What is JSX?
- - JSX means (Javascript XMl) is a extension for javascript library recommended for react for what UI should Look like and its combine HTML & Javascript like syntax to create react elements
+ - JSX is a syntax extension for Javascript recommend by react for describing what UI should look like and it's combine HTML & Javascript like syntax for creating react elements
 
 ## 21. What are the advantages of JSX? **V.IMP**  
  - Advantage of JSX
@@ -85,9 +85,9 @@ export default App
      * Support Javascript expressions.
      * Improved performance
      * Code reusability
-## 22. Can browser read a JSX file> What is **Babel**?
+## 22. Can browser read a JSX file? What is **Babel**?
  - No, Browser will not understand the JSX code directly, after converting the JSX  react code to javascript by using babel library then browser will understand the javascript code.
- - **Babel:** Babel in React is used to transpile JSX syntax into regular javascript which browser can understand.
+ - **Babel:** Babel is a javascript  compiler that transforms modern javascript (ES6+) into older version for compatability across browser and its aslo used in React to transpile JSX syntax into regular javascript which browser can understand.
 
 ## 23. What is Transpiler?
  - A transpiler is a tool converts source code from one programming language to another.
@@ -165,4 +165,8 @@ function ChildComponent(props){
      * && Operator
      * Switch statement
 
-## 30. 
+## 30. Why we are using Virtual DOM?
+  - We use Virtual Dom for faster performance because its only updating the changed parts of the actual dom and it is a lightweight copy of the actual dom
+
+## 31. How Virtual DOM works?
+ - The Virtual DOM works by creating a lightweight copy of the acutal DOM.when changes happens its updating the virtual DOM first and find differences in Real DOM this process is called diffing,and then updates  only happen in the Real DOM.This will makes updates faster and improves performance.
